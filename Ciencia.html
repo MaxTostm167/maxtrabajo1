@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="estilo02.css">
+    <title>Ciencia - J. Robert Oppenheimer</title>
+    
+    <style>
+        body {
+            background-color: #2b2b2b; 
+            font-family: Arial, sans-serif;
+            color: #F5F5F5; 
+        }
+
+        h1 {
+            color: #ff6700; 
+        }
+        
+        h2 {
+            color: #B0A490; 
+        }
+        
+        h1, h2, p {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 260px;
+            height: 300px; 
+            margin-bottom: 20px;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            object-fit: cover; 
+            /* Filtro opcional para darle un look de foto antigua */
+            filter: grayscale(50%);
+        }
+
+        .button-container {
+            text-align: center; 
+            margin: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+
+        th, td {
+            border: 1px solid #4A4A4A; 
+            padding: 10px; 
+            text-align: left;
+        }
+
+        thead th {
+            color: #ffffff;
+            background-color: #ff6700; 
+        }
+        
+        button {
+            font-size:18px;
+            letter-spacing:2px;
+            text-transform: uppercase;
+            display:inline-block;
+            text-align: center;
+            font-weight:bold;
+            padding: 0.7em 2em;
+            border: 3px solid #ff6700; 
+            border-radius: 2px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: #ff6700; 
+            text-decoration: none;
+            transition: 0.3s ease all;
+            z-index: 1; 
+            background-color: transparent; 
+        }
+        
+        button:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: #ff6700;
+            z-index: -1;
+        }
+        
+        button:hover, button:focus {
+            color: white; 
+        }
+        
+        button:hover::before, button:focus:before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+        
+        button:active {
+            transform: scale(0.9);
+        }
+
+        button a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        .button-container button.active {
+            background-color: #ff6700;
+            color: white;
+        }
+        .button-container button.active a {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="button-container">
+        <button><a href="deportes.html">Deportes</a></button>
+        <button><a href="Arte.html">Arte</a></button>
+        <button class="active"><a href="Ciencia.html">Ciencia</a></button>
+    </div>
+
+    <h1>J. Robert Oppenheimer</h1>
+        <div class="button-container"><button><a href="https://www.youtube.com/watch?v=20K2_T8eawU"target="_blank">"video sobre Oppenheimer"</a></button></div>
+    <div>
+        <img src="oppenhaimer_foto.jpg" alt="Foto de J. Robert Oppenheimer">
+        <p>
+            Julius Robert Oppenheimer fue un físico teórico estadounidense.<br>
+            Es mejor conocido como el "padre de la bomba atómica" por su papel fundamental como director del Proyecto Manhattan.
+        </p>
+    </div>
+
+    <h2>Contribuciones y Hechos Clave</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Contribución / Evento</th>
+                <th>Dato Relevante</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Proyecto Manhattan</td>
+                <td>Director del Laboratorio de Los Álamos</td>
+                <td>Lideró el equipo que desarrolló las primeras armas nucleares (Prueba Trinity).</td>
+            </tr>
+            <tr>
+                <td>Física Teórica</td>
+                <td>Aproximación de Born-Oppenheimer</td>
+                <td>Una contribución fundamental a la química cuántica y la mecánica molecular.</td>
+            </tr>
+            <tr>
+                <td>Astrofísica</td>
+                <td>Teoría de agujeros negros</td>
+                <td>Publicó trabajos sobre la contracción gravitacional y el colapso de estrellas masivas.</td>
+            </tr>
+            <tr>
+                <td>Posguerra</td>
+                <td>Comisión de Energía Atómica (AEC)</td>
+                <td>Fue un influyente asesor del gobierno, aunque más tarde se le revocó su autorización de seguridad.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

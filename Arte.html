@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="estilo02.css">
+    <title>Arte - Leonardo da Vinci</title>
+    
+    <style>
+        body {
+            background-color: #a3740d; 
+            font-family: Arial, sans-serif;
+            color: #ffffff; 
+        }
+
+        h1 {
+            color: #503c12; 
+        }
+        
+        h2 {
+            color: #503c12; 
+        }
+        
+        h1, h2, p {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 260px;
+            height: 300px; 
+            margin-bottom: 20px;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            object-fit: cover; 
+        }
+
+        .button-container {
+            text-align: center; 
+            margin: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+
+        th, td {
+            border: 1px solid #503c12; 
+            padding: 10px; 
+            text-align: left;
+        }
+
+        thead th {
+            color: #ffffff;
+            background-color: #503c12; 
+        }
+        
+        button {
+            font-size:18px;
+            letter-spacing:2px;
+            text-transform: uppercase;
+            display:inline-block;
+            text-align: center;
+            font-weight:bold;
+            padding: 0.7em 2em;
+            border: 3px solid #503c12; 
+            border-radius: 2px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: #503c12; 
+            text-decoration: none;
+            transition: 0.3s ease all;
+            z-index: 1; 
+            background-color: transparent; 
+        }
+        
+        button:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: #523b0c;
+            z-index: -1;
+        }
+        
+        button:hover, button:focus {
+            color: #503c12; 
+        }
+        
+        button:hover::before, button:focus:before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+        
+        button:active {
+            transform: scale(0.9);
+        }
+
+        button a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        .button-container button.active {
+            background-color: #503c12;
+            color: white;
+        }
+        .button-container button.active a {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="button-container">
+        <button><a href="deportes.html">Deportes</a></button>
+        <button class="active"><a href="Arte.html">Arte</a></button>
+        <button><a href="Ciencia.html">Ciencia</a></button>
+    </div>
+
+    <h1>Leonardo da Vinci</h1>
+    <div class="button-container"><button><a href="https://www.youtube.com/watch?v=XjcJG0YQSds&t=13s&pp=ugMICgJlcxABGAHKBRxsZW9uYXJkbyBkYXZpbmNpIHZpZGVvIGNvcnRv"target="_blank">"video sobre Leonardo da Vinci"<br>ingles necesario</a></button></div>
+    <div>
+        <img src="Davinci_foto.jpg" alt="Retrato de Leonardo da Vinci">
+        <p>
+            Leonardo da Vinci fue un polímata florentino del Renacimiento italiano.<br>
+            Fue a la vez pintor, anatomista, arquitecto, paleontólogo, artista, botánico, científico, escritor, escultor, filósofo, ingeniero, inventor, músico y poeta.
+        </p>
+    </div>
+
+    <h2>Obras y Logros Notables</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Campo</th>
+                <th>Obra / Logro</th>
+                <th>Dato Relevante</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Pintura</td>
+                <td>La Mona Lisa (Gioconda)</td>
+                <td>Famosa por su enigmática sonrisa y la técnica del *sfumato*.</td>
+            </tr>
+            <tr>
+                <td>Pintura</td>
+                <td>La Última Cena</td>
+                <td>Mural que captura la reacción de los apóstoles.</td>
+            </tr>
+            <tr>
+                <td>Anatomía / Dibujo</td>
+                <td>Hombre de Vitruvio</td>
+                <td>Un estudio de las proporciones del cuerpo humano.</td>
+            </tr>
+            <tr>
+                <td>Ingeniería</td>
+                <td>Diseños de Máquinas Voladoras</td>
+                <td>Incluyendo el ornitóptero y el "tornillo aéreo" (prototipo de helicóptero).</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

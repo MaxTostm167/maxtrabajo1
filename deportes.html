@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset-UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="estilo02.css">
+    <title>Deportes - Canelo Álvarez</title>
+    
+    <style>
+        body {
+            background-color: #221e1e; 
+            font-family: Arial, sans-serif;
+            color: #ffffff; 
+        }
+
+        h1 {
+            color: #d10000; 
+        }
+        
+        h2 {
+            color: #d10000; 
+        }
+        
+        h1, h2, p {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 260px;
+            /* Hice la imagen un poco más alta para un retrato */
+            height: 300px; 
+            margin-bottom: 20px;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            /* Esto ayuda a que la imagen no se estire si es de otro tamaño */
+            object-fit: cover; 
+        }
+
+        .button-container {
+            text-align: center; 
+            margin: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+
+        th, td {
+            border: 1px solid #d10000; 
+            padding: 10px; 
+            text-align: left;
+        }
+
+        thead th {
+            color: #ffffff;
+            background-color: #d10000; 
+        }
+        
+        button {
+            font-size:18px;
+            letter-spacing:2px;
+            text-transform: uppercase;
+            display:inline-block;
+            text-align: center;
+            font-weight:bold;
+            padding: 0.7em 2em;
+            border: 3px solid #d10000; 
+            border-radius: 2px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: #d10000; 
+            text-decoration: none;
+            transition: 0.3s ease all;
+            z-index: 1; 
+            background-color: transparent; 
+        }
+        
+        button:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: #ee0707;
+            z-index: -1;
+        }
+        
+        button:hover, button:focus {
+            color: white; 
+        }
+        
+        button:hover::before, button:focus:before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+        
+        button:active {
+            transform: scale(0.9);
+        }
+
+        button a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        /* --- ESTA ES LA ÚNICA REGLA NUEVA --- */
+        /* Para mostrar qué botón está activo */
+        .button-container button.active {
+            background-color: #d10000;
+            color: white;
+        }
+        .button-container button.active a {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="button-container">
+        <button class="active"><a href="deportes.html">Deportes</a></button>
+        <button><a href="Arte.html">Arte</a></button>
+        <button><a href="Ciencia.html">Ciencia</a></button>
+    </div>
+
+    <h1>Saúl "Canelo" Álvarez</h1>
+    <div class="button-container"><button><a href="https://www.youtube.com/watch?v=2Av5ZMfxkc0"target="_blank">"video sobre canelo alvarez"</a></button></div>
+    <div>
+        <img src="Canelo_foto.jpg" alt="Foto de Canelo Álvarez">
+        <p>
+            Santos Saúl Álvarez Barragán, conocido mundialmente como "Canelo", es un boxeador profesional mexicano.<br>
+            Es considerado uno de los mejores boxeadores libra por libra del mundo y ha ganado campeonatos mundiales en cuatro divisiones de peso distintas.
+        </p>
+    </div>
+
+    <h2>Logros Destacados</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Descripción del Logro</th>
+                <th>Dato Relevante</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Campeonatos</td>
+                <td>Campeón Mundial en 4 Divisiones</td>
+                <td>Superwelter, Mediano, Supermediano, Semipesado</td>
+            </tr>
+            <tr>
+                <td>Campeón Indiscutido</td>
+                <td>Primer campeón indiscutido de la historia</td>
+                <td>En la división de peso supermediano (168 lbs)</td>
+            </tr>
+            <tr>
+                <td>Récord Profesional</td>
+                <td>Récord (a finales de 2025)</td>
+                <td>Ej: 61 Victorias, 2 Derrotas, 2 Empates</td>
+            </tr>
+            <tr>
+                <td>Reconocimiento</td>
+                <td>Boxeador del Año</td>
+                <td>Nombrado por "The Ring" magazine (2019, 2021)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
